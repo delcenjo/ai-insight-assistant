@@ -1,0 +1,11 @@
+# Backend
+sentence-transformers>=2.2
+anthropic>=0.39
+fastapi>=0.110
+uvicorn[standard]>=0.29
+numpy>=1.24
+python-dotenv>=1.0
+
+# Frontend (Streamlit UI)
+streamlit>=1.30
+requests>=2.31
