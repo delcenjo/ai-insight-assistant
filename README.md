@@ -1,5 +1,12 @@
 # AI Insight Assistant
 
+![CI](https://github.com/delcenjo/ai-insight-assistant/actions/workflows/ci.yml/badge.svg)
+![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude_tool_use-D97757?logo=anthropic&logoColor=white)
+
 A capstone project that brings the rest of the portfolio together: an internal
 assistant that answers questions about a company by combining **retrieval over
 documents (RAG)** and a **tool-using agent that queries a database**, served
