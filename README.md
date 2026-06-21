@@ -14,7 +14,7 @@ through a **FastAPI** backend with a **Streamlit** chat frontend and packaged
 with **Docker Compose**.
 
 The model decides, per question, whether to search the handbook or query the
-employee database — the same agentic tool-use pattern, applied to two very
+employee database - the same agentic tool-use pattern, applied to two very
 different knowledge sources.
 
 ## Architecture
