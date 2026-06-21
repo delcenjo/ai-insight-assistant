@@ -5,7 +5,6 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude_tool_use-D97757?logo=anthropic&logoColor=white)
 
 A capstone project that brings the rest of the portfolio together: an internal
 assistant that answers questions about a company by combining **retrieval over
@@ -21,7 +20,7 @@ different knowledge sources.
 
 ```
                      ┌──────────────┐
-   Streamlit UI ───▶ │ FastAPI /chat│ ───▶ Claude (tool use)
+   Streamlit UI ───▶ │ FastAPI /chat│ ───▶ LLM (tool use)
                      └──────────────┘            │
                           ▲             ┌─────────┴──────────┐
                           │             ▼                    ▼
@@ -37,7 +36,7 @@ different knowledge sources.
 | ------ | ---------- | ---------------------------------------------------- |
 | GET    | `/health`  | liveness check                                       |
 | POST   | `/search`  | document retrieval only (works without an API key)   |
-| POST   | `/chat`    | full agent answer (requires `ANTHROPIC_API_KEY`)     |
+| POST   | `/chat`    | full agent answer (requires an LLM API key)     |
 
 ### Real examples
 
@@ -73,7 +72,7 @@ src/assistant/
   retrieval.py  chunking, embeddings and cosine search (RAG)
   database.py   company database and read-only query guard
   tools.py      search_docs and query_database tools
-  agent.py      Claude tool-use loop
+  agent.py      LLM tool-use loop
   ingest.py     build the index and seed the database
   api.py        FastAPI backend
 frontend/app.py Streamlit chat UI
