@@ -5,7 +5,7 @@ import streamlit as st
 
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 
-st.set_page_config(page_title="AI Insight Assistant", page_icon="🔎")
+st.set_page_config(page_title="AI Insight Assistant", page_icon="")
 st.title("AI Insight Assistant")
 st.caption("Ask about company policies (documents) or employee data (database).")
 
